@@ -20,6 +20,9 @@
     "paths": {
       "@razroo-angular-test/common/styles": [
         "libs/common/styles/src/index.ts"
+      ],
+      "@razroo-angular-test/common/ui": [
+        "libs/common/ui/src/index.ts"
       ]
     }
   },
