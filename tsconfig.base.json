@@ -41,6 +41,9 @@
       ],
       "@razroo-angular-test/data-graphql": [
         "libs/data-graphql/src/index.ts"
+      ],
+      "@razroo-angular-test/data-models": [
+        "libs/data-models/src/index.ts"
       ]
     }
   },
