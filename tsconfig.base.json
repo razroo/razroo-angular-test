@@ -32,6 +32,9 @@
       ],
       "@razroo-angular-test/common/common-guards": [
         "libs/common/common-guards/src/index.ts"
+      ],
+      "@razroo-angular-test/data-access": [
+        "libs/data-access/src/index.ts"
       ]
     }
   },
