@@ -1,5 +1,21 @@
+<razroo-angular-test-global-header
+  (sideNavToggle)="sideNavToggle()"
+></razroo-angular-test-global-header>
 <div class="wrapper">
   <div class="container">
-    
+    <razroo-angular-test-global-sidenav [opened]="sideNavOpen">
+      <mat-nav-list sidenav>
+        <a
+          mat-list-item
+          routerLinkActive="active-link"
+          routerLink="/"
+          (click)="sideNavToggle()"
+        >
+          <span class="App__sidenav-text">Home</span>
+        </a>
+      </mat-nav-list>
+      <router-outlet></router-outlet>
+    </razroo-angular-test-global-sidenav>
   </div>
 </div>
+<razroo-angular-test-global-footer> </razroo-angular-test-global-footer>
