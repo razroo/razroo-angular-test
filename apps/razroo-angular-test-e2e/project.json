@@ -1,0 +1,26 @@
+{
+  "name": "razroo-angular-test-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/razroo-angular-test-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nx/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/razroo-angular-test-e2e/cypress.json",
+        "devServerTarget": "razroo-angular-test:serve:development"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "razroo-angular-test:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"]
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["razroo-angular-test"]
+}
