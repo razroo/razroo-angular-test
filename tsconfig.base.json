@@ -35,6 +35,9 @@
       ],
       "@razroo-angular-test/data-access": [
         "libs/data-access/src/index.ts"
+      ],
+      "@razroo-angular-test/data-services": [
+        "libs/data-services/src/index.ts"
       ]
     }
   },
